@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>نخيليات | Nakhiliyat - سرور</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <i class="fa-solid fa-tree"></i> نخيليات
+  </div>
+  <a href="#" class="btn-contact">تواصل معنا</a>
+</nav>
+
+<header>
+  <h1>نخيليات</h1>
+  <div class="subtitle">تجربة بيئية سياحية في قرية سرور</div>
+</header>
+
+<div class="hero-container" id="hero-block">
+  <div class="hero-box">
+    <h2>من عمق ولاية سمائل</h2>
+    <p>
+      نحول النخلة إلى تجربة معرفية واقتصادية متكاملة. 
+      مشروع يجمع بين أصالة الماضي وحداثة الحاضر، لخلق وجهة سياحية مستدامة تدعم المجتمع المحلي.
+    </p>
+  </div>
+</div>
+
+<section class="grid" id="home-grid">
+  
+  <div class="card" onclick="showSection('museum-live')">
+    <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+    <h3>المتحف الحي</h3>
+    <p>جولة ميدانية ومسار سياحي بين بساتين النخيل الوارفة.</p>
+  </div>
+
+  <div class="card" onclick="showSection('museum-mini')">
+    <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+    <h3>المتحف المصغر</h3>
+    <p>معرض داخلي يوثق أدوات الزراعة وتراث الأجداد.</p>
+  </div>
+
+  <div class="card" onclick="showSection('store')">
+    <div class="card-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+    <h3>المتجر الريفي</h3>
+    <p>أجود أنواع التمور، السعفيات، والهدايا التذكارية.</p>
+  </div>
+
+  <div class="card" onclick="showSection('cafe')">
+    <div class="card-icon"><i class="fa-solid fa-mug-hot"></i></div>
+    <h3>مقهى النخلة</h3>
+    <p>تذوق إبداعات عصرية: قهوة النوى وكعك الدبس.</p>
+  </div>
+
+  <div class="card" onclick="showSection('workshops')">
+    <div class="card-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+    <h3>أكاديمية السعفيات</h3>
+    <p>دورات تدريبية لإحياء الحرف التقليدية.</p>
+  </div>
+
+  <div class="card" onclick="showSection('digital')">
+    <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+    <h3>المنصة الرقمية</h3>
+    <p>خدمة "طناء النخيل" الإلكترونية وحجز التذاكر.</p>
+  </div>
+
+</section>
+
+<section id="museum-live" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-map-location-dot content-icon"></i>
+    <h2>المتحف الحي المفتوح</h2>
+  </div>
+  <p>تجربة غامرة وسط الطبيعة لاستنشاق عبق الماضي في قرية سرور.</p>
+  <div class="highlight-box">
+    <strong>التجربة تشمل:</strong>
+    <ul>
+      <li>مسارات مشي تعليمية بين أصناف النخيل العمانية (الفرض، الخلاص، الخنيزي).</li>
+      <li>مشاهدة حية لعمليات التنبيت، التبسيل، والجداد في مواسمها.</li>
+      <li>نظام الري بالأفلاج والتعرف على هندسته القديمة.</li>
+    </ul>
+  </div>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<section id="museum-mini" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-landmark content-icon"></i>
+    <h2>المتحف المصغر</h2>
+  </div>
+  <p>قاعة عرض خاصة توثق ذاكرة المزارع العماني وتحفظ الأدوات التي كادت أن تندثر.</p>
+  <div class="highlight-box">
+    <strong>أبرز المعروضات:</strong>
+    <ul>
+      <li>أدوات الصعود للنخلة (الصوع، الحابول).</li>
+      <li>أدوات الري القديمة وجذوع النخيل المجوفة (الخشب).</li>
+      <li>معرض صور فوتوغرافية يحكي تاريخ ولاية سمائل الزراعي.</li>
+    </ul>
+  </div>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<section id="store" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-basket-shopping content-icon"></i>
+    <h2>المتجر الريفي</h2>
+  </div>
+  <p>وجهتكم لاقتناء منتجات أصيلة تمزج بين جودة الإنتاج وجمال التغليف العصري.</p>
+  <div class="highlight-box">
+    <strong>أقسام المتجر:</strong>
+    <ul>
+      <li><strong>ركن التمور:</strong> أجود أنواع الرطب والتمور المغلفة والمدبسة محلياً.</li>
+      <li><strong>ركن السعفيات:</strong> منتجات يدوية (قفير، مشبة، سلال) بلمسات عصرية.</li>
+      <li><strong>ركن الهدايا:</strong> تذكارات سياحية مستوحاة من شجرة النخيل.</li>
+    </ul>
+  </div>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<section id="cafe" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-mug-hot content-icon"></i>
+    <h2>مقهى النخلة</h2>
+  </div>
+  <p>استراحة الزوار للاستمتاع بمذاقات مبتكرة وسط هدوء المزرعة.</p>
+  <div class="highlight-box">
+    <strong>قائمة المقهى:</strong><br>
+    - قهوة نواة التمر (بديل صحي فاخر).<br>
+    - شاي الكرك بالدبس.<br>
+    - آيس كريم وحلويات مصنوعة من التمر العماني.
+  </div>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<section id="workshops" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-hands-holding-circle content-icon"></i>
+    <h2>أكاديمية السعفيات</h2>
+  </div>
+  <p>ننقل الحرفة من أيادي الأجداد إلى إبداع الأحفاد.</p>
+  <p>نقدم ورش عمل تفاعلية للسياح وطلاب المدارس لتعلم أساسيات سف الخوص وصناعة الحبال، مما يعزز تقدير العمل اليدوي ويدعم الأسر المنتجة.</p>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<section id="digital" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-laptop-code content-icon"></i>
+    <h2>المنصة الرقمية</h2>
+  </div>
+  <p>بوابة "نخيليات" للعالم، نربط التراث بالتقنية.</p>
+  <div class="highlight-box">
+    <strong>خدمة "طناء النخيل" (E-Tanaa):</strong> 
+    <br>
+    تتيح لك هذه الخدمة اختيار نخلة محددة من المزرعة عبر الموقع، ودفع قيمة "طنائها" لموسم كامل. نحن نقوم بالرعاية والعناية، ونوصل لك محصول الرطب والتمور (الجداد) مغلفاً إلى باب منزلك، مع تحديثات دورية لصور نخلتك.
+  </div>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<footer>
+  <span class="vision-tag">متوافق مع رؤية عمان 2040</span>
+  <p>© 2026 نخيليات - ولاية سمائل، قرية سرور</p>
+  <p style="font-size:0.8rem; margin-top:10px; opacity:0.6;">مشروع سياحي، بيئي، تنموي</p>
+</footer>
+
+<script>
+  function showSection(id){
+    document.getElementById('home-grid').style.display = 'none';
+    document.getElementById('hero-block').style.display = 'none';
+    document.querySelectorAll('.content').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function backHome(){
+    document.querySelectorAll('.content').forEach(s => s.style.display = 'none');
+    document.getElementById('home-grid').style.display = 'grid';
+    document.getElementById('hero-block').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
