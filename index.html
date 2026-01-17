@@ -4,20 +4,39 @@
   <meta charset="UTF-8" />
   <title>نخيليات | Nakhiliyat - سرور</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <div class="logo">
-    <i class="fa-solid fa-tree"></i> نخيليات
+    <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      
+      <path d="M45 55 L55 55 L58 95 L42 95 Z" fill="#8B4513"/>
+      <path d="M44 65 H56 M43 75 H57 M42 85 H58" stroke="rgba(0,0,0,0.2)" stroke-width="2"/>
+
+      <path d="M55 55 Q65 65 60 75" stroke="var(--accent-color)" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M45 55 Q35 65 40 75" stroke="var(--accent-color)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+      <path d="M50 55 L50 10" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M50 55 Q70 40 85 45" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M50 55 Q65 30 80 25" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M50 55 Q60 20 70 15" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M50 55 Q30 40 15 45" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M50 55 Q35 30 20 25" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M50 55 Q40 20 30 15" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
+      
+    </svg>
+    
+    <span style="margin-right:5px; font-size:1.5rem; color:var(--primary-main);">نخيليات</span>
   </div>
-  <a href="#" class="btn-contact">تواصل معنا</a>
+  
+  <a href="#" class="btn-contact" onclick="openModal('contactModal')">تواصل معنا</a>
+</nav>
+  
+  <a href="#" class="btn-contact" onclick="openModal('contactModal')">تواصل معنا</a>
 </nav>
 
 <header>
@@ -40,13 +59,19 @@
   <div class="card" onclick="showSection('museum-live')">
     <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
     <h3>المتحف الحي</h3>
-    <p>جولة ميدانية ومسار سياحي بين بساتين النخيل الوارفة.</p>
+    <p>جولة ميدانية ومسار سياحي بين بساتين النخيل.</p>
   </div>
 
   <div class="card" onclick="showSection('museum-mini')">
     <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
     <h3>المتحف المصغر</h3>
     <p>معرض داخلي يوثق أدوات الزراعة وتراث الأجداد.</p>
+  </div>
+  
+  <div class="card" onclick="showSection('info-palm')">
+    <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+    <h3>معلومات النخيل</h3>
+    <p>موسوعة شاملة عن أنواع النخيل وقيمتها البيئية.</p>
   </div>
 
   <div class="card" onclick="showSection('store')">
@@ -84,9 +109,9 @@
   <div class="highlight-box">
     <strong>التجربة تشمل:</strong>
     <ul>
-      <li>مسارات مشي تعليمية بين أصناف النخيل العمانية (الفرض، الخلاص، الخنيزي).</li>
-      <li>مشاهدة حية لعمليات التنبيت، التبسيل، والجداد في مواسمها.</li>
-      <li>نظام الري بالأفلاج والتعرف على هندسته القديمة.</li>
+      <li>مسارات مشي تعليمية بين أصناف النخيل العمانية.</li>
+      <li>مشاهدة حية لعمليات التنبيت، التبسيل، والجداد.</li>
+      <li>التعرف على هندسة الأفلاج القديمة.</li>
     </ul>
   </div>
   <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
@@ -102,8 +127,24 @@
     <strong>أبرز المعروضات:</strong>
     <ul>
       <li>أدوات الصعود للنخلة (الصوع، الحابول).</li>
-      <li>أدوات الري القديمة وجذوع النخيل المجوفة (الخشب).</li>
-      <li>معرض صور فوتوغرافية يحكي تاريخ ولاية سمائل الزراعي.</li>
+      <li>أدوات الري القديمة وجذوع النخيل المجوفة.</li>
+    </ul>
+  </div>
+  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
+</section>
+
+<section id="info-palm" class="content">
+  <div class="content-header">
+    <i class="fa-solid fa-book-open-reader content-icon"></i>
+    <h2>موسوعة معلومات النخيل</h2>
+  </div>
+  <p>النخلة هي عمود الأمن الغذائي في عُمان ورمز للصمود البيئي. هنا نقدم لكم حقائق علمية وتاريخية.</p>
+  <div class="highlight-box">
+    <strong>حقائق وأرقام:</strong>
+    <ul>
+      <li>تحتضن عُمان أكثر من 8 ملايين نخلة، وتنتج مئات الآلاف من الأطنان سنويًا.</li>
+      <li><strong>الاستدامة البيئية:</strong> تساهم النخلة في مكافحة التصحر، تقليل البصمة الكربونية، وخفض درجات الحرارة.</li>
+      <li><strong>أشهر الأنواع في سمائل:</strong> الفرض (ملك التمور)، الخلاص (المذاق الذهبي)، والمبسلي (المخصص للتصدير والطبخ).</li>
     </ul>
   </div>
   <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
@@ -116,13 +157,13 @@
   </div>
   <p>وجهتكم لاقتناء منتجات أصيلة تمزج بين جودة الإنتاج وجمال التغليف العصري.</p>
   <div class="highlight-box">
-    <strong>أقسام المتجر:</strong>
     <ul>
-      <li><strong>ركن التمور:</strong> أجود أنواع الرطب والتمور المغلفة والمدبسة محلياً.</li>
-      <li><strong>ركن السعفيات:</strong> منتجات يدوية (قفير، مشبة، سلال) بلمسات عصرية.</li>
-      <li><strong>ركن الهدايا:</strong> تذكارات سياحية مستوحاة من شجرة النخيل.</li>
+      <li><strong>ركن التمور:</strong> أجود أنواع الرطب والتمور.</li>
+      <li><strong>ركن السعفيات:</strong> منتجات يدوية بلمسات عصرية.</li>
     </ul>
   </div>
+  <button class="btn-action" onclick="openModal('contactModal')">طلب منتجات خاصة</button>
+  <br>
   <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
 </section>
 
@@ -134,9 +175,9 @@
   <p>استراحة الزوار للاستمتاع بمذاقات مبتكرة وسط هدوء المزرعة.</p>
   <div class="highlight-box">
     <strong>قائمة المقهى:</strong><br>
-    - قهوة نواة التمر (بديل صحي فاخر).<br>
+    - قهوة نواة التمر.<br>
     - شاي الكرك بالدبس.<br>
-    - آيس كريم وحلويات مصنوعة من التمر العماني.
+    - آيس كريم التمر العماني.
   </div>
   <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
 </section>
@@ -146,8 +187,9 @@
     <i class="fa-solid fa-hands-holding-circle content-icon"></i>
     <h2>أكاديمية السعفيات</h2>
   </div>
-  <p>ننقل الحرفة من أيادي الأجداد إلى إبداع الأحفاد.</p>
-  <p>نقدم ورش عمل تفاعلية للسياح وطلاب المدارس لتعلم أساسيات سف الخوص وصناعة الحبال، مما يعزز تقدير العمل اليدوي ويدعم الأسر المنتجة.</p>
+  <p>نقدم ورش عمل تفاعلية للسياح وطلاب المدارس لتعلم أساسيات سف الخوص.</p>
+  <button class="btn-action" onclick="openModal('contactModal')">حجز ورشة عمل</button>
+  <br>
   <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
 </section>
 
@@ -160,31 +202,137 @@
   <div class="highlight-box">
     <strong>خدمة "طناء النخيل" (E-Tanaa):</strong> 
     <br>
-    تتيح لك هذه الخدمة اختيار نخلة محددة من المزرعة عبر الموقع، ودفع قيمة "طنائها" لموسم كامل. نحن نقوم بالرعاية والعناية، ونوصل لك محصول الرطب والتمور (الجداد) مغلفاً إلى باب منزلك، مع تحديثات دورية لصور نخلتك.
+    اختر نخلة محددة عبر الموقع، وادفع قيمة "طنائها". نحن نقوم بالرعاية، ونوصل لك محصول الجداد مغلفاً إلى منزلك.
   </div>
+  <button class="btn-action" onclick="openModal('tanaaModal')">ابدأ رحلة الطناء</button>
+  <br>
   <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
 </section>
 
 <footer>
   <span class="vision-tag">متوافق مع رؤية عمان 2040</span>
   <p>© 2026 نخيليات - ولاية سمائل، قرية سرور</p>
-  <p style="font-size:0.8rem; margin-top:10px; opacity:0.6;">مشروع سياحي، بيئي، تنموي</p>
 </footer>
 
+<div id="contactModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-modal" onclick="closeModal('contactModal')">&times;</span>
+    <h3><i class="fa-solid fa-envelope-open-text"></i> تواصل معنا</h3>
+    <form onsubmit="event.preventDefault(); alert('شكرًا لتواصلك! سنرد عليك قريبًا.'); closeModal('contactModal');">
+      <div class="form-group">
+        <label>الاسم الكريم</label>
+        <input type="text" placeholder="الاسم" required>
+      </div>
+      <div class="form-group">
+        <label>رقم الهاتف</label>
+        <input type="tel" placeholder="9xxxxxxx" required>
+      </div>
+      <div class="form-group">
+        <label>رسالتك</label>
+        <textarea rows="4" placeholder="استفسار، حجز، أو اقتراح..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">إرسال</button>
+    </form>
+  </div>
+</div>
+
+<div id="tanaaModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-modal" onclick="closeModal('tanaaModal')">&times;</span>
+    <h3><i class="fa-solid fa-tree"></i> حجز طناء النخيل</h3>
+    <p style="text-align:center; color:#666; margin-bottom:15px; font-size:0.9rem;">
+      سجل اهتمامك وسنتواصل معك لعرض النخيل المتاحة للموسم الحالي.
+    </p>
+    <form onsubmit="event.preventDefault(); alert('تم تسجيل طلبك! سيتصل بك فريق نخيليات لتحديد النخلة.'); closeModal('tanaaModal');">
+      <div class="form-group">
+        <label>الاسم</label>
+        <input type="text" required>
+      </div>
+      <div class="form-group">
+        <label>نوع النخلة المفضل</label>
+        <select>
+          <option>خلاص</option>
+          <option>فرض</option>
+          <option>خنيزي</option>
+          <option>مبسلي</option>
+          <option>لا يهم (أي نوع)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>رقم الهاتف للتواصل</label>
+        <input type="tel" required>
+      </div>
+      <button type="submit" class="btn-submit" style="background:var(--accent-color);">تأكيد الحجز المبدئي</button>
+    </form>
+  </div>
+</div>
+
 <script>
-  function showSection(id){
-    document.getElementById('home-grid').style.display = 'none';
-    document.getElementById('hero-block').style.display = 'none';
-    document.querySelectorAll('.content').forEach(s => s.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // 1. دالة للتحكم في العرض فقط (بدون تسجيل في التاريخ)
+  function renderView(viewId) {
+    const homeGrid = document.getElementById('home-grid');
+    const heroBlock = document.getElementById('hero-block');
+    const contentSections = document.querySelectorAll('.content');
+
+    // إذا كان المطلوب هو الرئيسية
+    if (viewId === 'home' || viewId === '' || !viewId) {
+      contentSections.forEach(s => s.style.display = 'none');
+      homeGrid.style.display = 'grid';
+      heroBlock.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // إذا كان المطلوب قسم فرعي
+      const section = document.getElementById(viewId);
+      if (section) {
+        homeGrid.style.display = 'none';
+        heroBlock.style.display = 'none';
+        contentSections.forEach(s => s.style.display = 'none');
+        section.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
   }
 
-  function backHome(){
-    document.querySelectorAll('.content').forEach(s => s.style.display = 'none');
-    document.getElementById('home-grid').style.display = 'grid';
-    document.getElementById('hero-block').style.display = 'block';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // 2. دالة الانتقال التي تستدعيها الأزرار (تسجل في التاريخ)
+  function showSection(id) {
+    // إضافة الحالة لتاريخ المتصفح
+    history.pushState({ section: id }, "", "#" + id);
+    renderView(id);
+  }
+
+  // 3. دالة العودة للرئيسية (تسجل في التاريخ)
+  function backHome() {
+    // إزالة الهاش من الرابط والعودة للرئيسية
+    history.pushState({ section: 'home' }, "", window.location.pathname);
+    renderView('home');
+  }
+
+  // 4. الاستماع لزر العودة في المتصفح (The Magic Part)
+  window.addEventListener('popstate', function(event) {
+    // التحقق من الحالة المحفوظة أو الهاش الموجود في الرابط
+    const sectionId = location.hash.replace('#', '') || 'home';
+    renderView(sectionId);
+  });
+
+  // 5. عند تحميل الصفحة لأول مرة (لفتح رابط مباشر لقسم معين)
+  window.addEventListener('DOMContentLoaded', () => {
+    const initialSection = location.hash.replace('#', '') || 'home';
+    renderView(initialSection);
+  });
+
+  // --- دوال النوافذ المنبثقة (Modals) ---
+  function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal-overlay')) {
+      event.target.style.display = "none";
+    }
   }
 </script>
 
