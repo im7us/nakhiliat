@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>المتجر الريفي | نخيليات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* تنسيقات إضافية خاصة بالمتجر */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+      border: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-image {
+      width: 100%;
+      height: 200px;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-main);
+      font-size: 3rem;
+    }
+    .product-info {
+      padding: 20px;
+      text-align: center;
+    }
+    .product-price {
+      color: var(--accent-color);
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    .btn-buy {
+      background: var(--primary-main);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Cairo', sans-serif;
+      transition: opacity 0.3s;
+    }
+    .btn-buy:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+      <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 55 L55 55 L58 95 L42 95 Z" fill="#8B4513"/>
+        <path d="M44 65 H56 M43 75 H57 M42 85 H58" stroke="rgba(0,0,0,0.2)" stroke-width="2"/>
+        <path d="M55 55 Q65 65 60 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M45 55 Q35 65 40 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 L50 10" stroke="#2e5d38" stroke-width="3" stroke-linecap="round"/>
+        <path d="M50 55 Q70 40 85 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q65 30 80 25" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q60 20 70 15" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q30 40 15 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q35 30 20 25" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q40 20 30 15" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span style="font-weight: 900; color: var(--primary-main); font-size: 1.6rem;">نخيليات</span>
+    </a>
+  </div>
+  <a href="index.html" class="btn-contact" style="background: var(--text-medium);">الرئيسية</a>
+</nav>
+
+<main class="content" style="display: block;">
+  <div class="content-header">
+    <i class="fa-solid fa-basket-shopping content-icon"></i>
+    <h2>المتجر الريفي</h2>
+    <p>من بساتين "سرور" إلى منزلك.. أجود منتجات النخيل العمانية.</p>
+  </div>
+
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <div class="product-image">
+        <i class="fa-solid fa-box-open"></i>
+      </div>
+      <div class="product-info">
+        <h3>تمر خلاص فاخر (1 كجم)</h3>
+        <p>مُنتقى بعناية من نخلات قرية سرور، يتميز بمذاقه العسلي الفريد.</p>
+        <div class="product-price">4.500 ر.ع</div>
+        <button class="btn-buy" onclick="alert('تمت الإضافة للسلة')">إضافة للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <i class="fa-solid fa-jar"></i>
+      </div>
+      <div class="product-info">
+        <h3>دبس نخل الفرض</h3>
+        <p>عسل التمر الطبيعي 100%، غني بالمعادن وبدون سكر مضاف.</p>
+        <div class="product-price">2.800 ر.ع</div>
+        <button class="btn-buy" onclick="alert('تمت الإضافة للسلة')">إضافة للسلة</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <i class="fa-solid fa-fan"></i>
+      </div>
+      <div class="product-info">
+        <h3>مروحة سعف يدوية</h3>
+        <p>مشغولة يدوياً بأنامل حرفيات عمانيات من سعف النخيل الطبيعي.</p>
+        <div class="product-price">3.500 ر.ع</div>
+        <button class="btn-buy" onclick="alert('تمت الإضافة للسلة')">إضافة للسلة</button>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="highlight-box" style="margin-top: 50px; background: #fff8e8; border-right-color: var(--accent-color);">
+    <h3><i class="fa-solid fa-gift"></i> صناديق الهدايا</h3>
+    <p>صممنا لكم صناديق خشبية فاخرة تجمع بين أنواع التمور المختلفة والمشغولات السعفية، لتكون هدية مثالية تعبر عن كرم الضيافة العمانية.</p>
+    <button class="btn-submit" style="width: auto; margin-top: 15px;">تصفح التشكيلة</button>
+  </div>
+
+  <a class="btnBack" href="index.html"><i class="fa-solid fa-arrow-right"></i> العودة للرئيسية</a>
+</main>
+
+<footer>
+  <p>© 2026 نخيليات - جودة وطبيعة من سمائل</p>
+</footer>
+
+</body>
+</html>

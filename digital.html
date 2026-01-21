@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>المنصة الرقمية | نخيليات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* تنسيقات خاصة بالخدمات الرقمية */
+    .service-status {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .status-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid #eee;
+      position: relative;
+      overflow: hidden;
+    }
+    .status-card i {
+      font-size: 2.5rem;
+      color: var(--primary-main);
+      margin-bottom: 15px;
+    }
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: -30px;
+      background: var(--accent-color);
+      color: #fff;
+      padding: 5px 40px;
+      transform: rotate(-45deg);
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+    .app-preview {
+      background: var(--primary-dark);
+      color: white;
+      padding: 40px;
+      border-radius: 20px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .app-text { flex: 1; min-width: 250px; }
+    .app-btns { display: flex; gap: 10px; margin-top: 20px; }
+    .store-btn {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+      <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 55 L55 55 L58 95 L42 95 Z" fill="#8B4513"/>
+        <path d="M44 65 H56 M43 75 H57 M42 85 H58" stroke="rgba(0,0,0,0.2)" stroke-width="2"/>
+        <path d="M55 55 Q65 65 60 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M45 55 Q35 65 40 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 L50 10" stroke="#2e5d38" stroke-width="3" stroke-linecap="round"/>
+        <path d="M50 55 Q70 40 85 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q65 30 80 25" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q60 20 70 15" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q30 40 15 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q35 30 20 25" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q40 20 30 15" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span style="font-weight: 900; color: var(--primary-main); font-size: 1.6rem;">نخيليات</span>
+    </a>
+  </div>
+  <a href="index.html" class="btn-contact" style="background: var(--text-medium);">الرئيسية</a>
+</nav>
+
+<main class="content" style="display: block;">
+  <div class="content-header">
+    <i class="fa-solid fa-laptop-code content-icon"></i>
+    <h2>المنصة الرقمية</h2>
+    <p>نطوع التكنولوجيا لخدمة التراث الزراعي وتسهيل وصولكم لخدماتنا.</p>
+  </div>
+
+  <div class="service-status">
+    <div class="status-card">
+      <div class="badge">متاح حالياً</div>
+      <i class="fa-solid fa-ticket-weighted"></i>
+      <h4>الحجز الإلكتروني</h4>
+      <p>احجز تذكرتك لزيارة المتحف الحي أو حجز طاولة في مقهى النخلة بكل سهولة.</p>
+      <button class="btn-submit" style="font-size: 0.9rem;">ابدأ الحجز</button>
+    </div>
+
+    <div class="status-card">
+      <div class="badge" style="background: #2e5d38;">قريباً</div>
+      <i class="fa-solid fa-gavel"></i>
+      <h4>منصة "الطناء" الرقمية</h4>
+      <p>أول منصة للمزايدة الإلكترونية على ثمار النخيل في ولاية سمائل لضمان الشفافية.</p>
+      <button class="btn-submit" style="font-size: 0.9rem; background: #ccc; cursor: not-allowed;">قيد التطوير</button>
+    </div>
+
+  </div>
+
+  <div class="app-preview">
+    <div class="app-text">
+      <h3 style="color: var(--accent-color);">تطبيق "نخيليات" قادم للهواتف الذكية</h3>
+      <p>كل خدماتنا ستكون في جيبك قريباً. تابع نمو نخلتك، احصل على تنبيهات الحصاد، وتسوق منتجاتنا بضغطة زر.</p>
+      <div class="app-btns">
+        <div class="store-btn"><i class="fa-brands fa-apple fa-2x"></i> <span>App Store<br><b>قريباً</b></span></div>
+        <div class="store-btn"><i class="fa-brands fa-google-play fa-2x"></i> <span>Google Play<br><b>قريباً</b></span></div>
+      </div>
+    </div>
+    <div class="app-icon" style="font-size: 8rem; opacity: 0.2;">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+    </div>
+  </div>
+
+
+  <a class="btnBack" href="index.html"><i class="fa-solid fa-arrow-right"></i> العودة للرئيسية</a>
+</main>
+
+<footer>
+  <p>© 2026 المنصة الرقمية لنخيليات - نحو زراعة ذكية</p>
+</footer>
+
+</body>
+</html>
