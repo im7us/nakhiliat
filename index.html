@@ -2,337 +2,139 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>نخيليات | Nakhiliyat - سرور</title>
+  <title>نخيليات | Nakhiliyat - تجربة سياحية في قرية سرور</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <div class="logo">
-    <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      
-      <path d="M45 55 L55 55 L58 95 L42 95 Z" fill="#8B4513"/>
-      <path d="M44 65 H56 M43 75 H57 M42 85 H58" stroke="rgba(0,0,0,0.2)" stroke-width="2"/>
-
-      <path d="M55 55 Q65 65 60 75" stroke="var(--accent-color)" stroke-width="6" stroke-linecap="round" fill="none"/>
-      <path d="M45 55 Q35 65 40 75" stroke="var(--accent-color)" stroke-width="6" stroke-linecap="round" fill="none"/>
-
-      <path d="M50 55 L50 10" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round"/>
-      <path d="M50 55 Q70 40 85 45" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M50 55 Q65 30 80 25" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M50 55 Q60 20 70 15" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M50 55 Q30 40 15 45" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M50 55 Q35 30 20 25" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M50 55 Q40 20 30 15" stroke="var(--primary-main)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      
-    </svg>
-    
-    <span style="margin-right:5px; font-size:1.5rem; color:var(--primary-main);">نخيليات</span>
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+      <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 55 L55 55 L58 95 L42 95 Z" fill="#8B4513"/>
+        <path d="M44 65 H56 M43 75 H57 M42 85 H58" stroke="rgba(0,0,0,0.2)" stroke-width="2"/>
+        <path d="M55 55 Q65 65 60 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M45 55 Q35 65 40 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 L50 10" stroke="#2e5d38" stroke-width="3" stroke-linecap="round"/>
+        <path d="M50 55 Q70 40 85 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q65 30 80 25" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q60 20 70 15" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q30 40 15 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q35 30 20 25" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <path d="M50 55 Q40 20 30 15" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span style="font-weight: 900; color: var(--primary-main); font-size: 1.6rem;">نخيليات</span>
+    </a>
   </div>
-  
-  <a href="#" class="btn-contact" onclick="openModal('contactModal')">تواصل معنا</a>
+  <a href="#" class="btn-contact" onclick="openModal()">تواصل معنا</a>
 </nav>
 
 <header>
   <h1>نخيليات</h1>
-  <div class="subtitle">تجربة بيئية سياحية في قرية سرور</div>
+  <div class="subtitle">استكشف عالم النخيل في قلب قرية سرور</div>
 </header>
 
-<div class="hero-container" id="hero-block">
+<div class="hero-container">
   <div class="hero-box">
-    <h2>من عمق ولاية سمائل</h2>
+    <h2>أهلاً بكم في سمائل</h2>
     <p>
-      نحول النخلة إلى تجربة معرفية واقتصادية متكاملة. 
-      مشروع يجمع بين أصالة الماضي وحداثة الحاضر، لخلق وجهة سياحية مستدامة تدعم المجتمع المحلي.
+      مشروع "نخيليات" هو جسر بين التاريخ الزراعي العماني ومستقبل السياحة المستدامة. 
+      نأخذكم في رحلة من البذرة إلى الثمرة، ومن السعفة إلى الحرفة.
     </p>
   </div>
 </div>
 
-<section class="grid" id="home-grid">
+<section class="grid">
   
-  <div class="card" onclick="showSection('museum-live')">
+  <a href="museumlive.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
     <h3>المتحف الحي</h3>
-    <p>جولة ميدانية ومسار سياحي بين بساتين النخيل.</p>
-  </div>
+    <p>جولة ميدانية تعليمية بين مزارع النخيل والأفلاج.</p>
+  </a>
 
-  <div class="card" onclick="showSection('museum-mini')">
+  <a href="museum-mini.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
-    <h3>المتحف المصغر</h3>
-    <p>معرض داخلي يوثق أدوات الزراعة وتراث الأجداد.</p>
-  </div>
-  
-  <div class="card" onclick="showSection('info-palm')">
+    <h3>متحف خوصة</h3>
+    <p>معرض للأدوات التراثية والمقتنيات الزراعية النادرة.</p>
+  </a>
+
+  <a href="infopalm.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
     <h3>معلومات النخيل</h3>
-    <p>موسوعة شاملة عن أنواع النخيل وقيمتها البيئية.</p>
-  </div>
+    <p>موسوعة تفاعلية حول أنواع النخيل وفوائدها البيئية.</p>
+  </a>
 
-  <div class="card" onclick="showSection('store')">
+  <a href="store.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-basket-shopping"></i></div>
     <h3>المتجر الريفي</h3>
-    <p>أجود أنواع التمور، السعفيات، والهدايا التذكارية.</p>
-  </div>
+    <p>اقتنِ أجود أنواع التمور والمنتجات السعفية اليدوية.</p>
+  </a>
 
-  <div class="card" onclick="showSection('cafe')">
+  <a href="cafe.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-mug-hot"></i></div>
-    <h3>مقهى النخلة</h3>
-    <p>تذوق إبداعات عصرية: قهوة النوى وكعك الدبس.</p>
-  </div>
+    <h3>مقهى نوى</h3>
+    <p>تذوق ابتكاراتنا العصرية المستوحاة من خيرات النخيل.</p>
+  </a>
 
-  <div class="card" onclick="showSection('workshops')">
+  <a href="workshops.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
-    <h3>أكاديمية السعفيات</h3>
-    <p>دورات تدريبية لإحياء الحرف التقليدية.</p>
-  </div>
+    <h3>أكاديمية سعف</h3>
+    <p>ورش عمل حية لتعلم حرفة سف الخوص وصناعة التراث.</p>
+  </a>
 
-  <div class="card" onclick="showSection('digital')">
+  <a href="digital.html" class="card">
     <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
     <h3>المنصة الرقمية</h3>
-    <p>خدمة "طناء النخيل" الإلكترونية وحجز التذاكر.</p>
-  </div>
+    <p>خدمات حجز الطناء الإلكتروني والتذاكر السياحية.</p>
+  </a>
 
-</section>
-
-<section id="museum-live" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-map-location-dot content-icon"></i>
-    <h2>المتحف الحي المفتوح</h2>
-  </div>
-  <p>تجربة غامرة وسط الطبيعة لاستنشاق عبق الماضي في قرية سرور.</p>
-  <div class="highlight-box">
-    <strong>التجربة تشمل:</strong>
-    <ul>
-      <li>مسارات مشي تعليمية بين أصناف النخيل العمانية.</li>
-      <li>مشاهدة حية لعمليات التنبيت، التبسيل، والجداد.</li>
-      <li>التعرف على هندسة الأفلاج القديمة.</li>
-    </ul>
-  </div>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
-</section>
-
-<section id="museum-mini" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-landmark content-icon"></i>
-    <h2>المتحف المصغر</h2>
-  </div>
-  <p>قاعة عرض خاصة توثق ذاكرة المزارع العماني وتحفظ الأدوات التي كادت أن تندثر.</p>
-  <div class="highlight-box">
-    <strong>أبرز المعروضات:</strong>
-    <ul>
-      <li>أدوات الصعود للنخلة (الصوع، الحابول).</li>
-      <li>أدوات الري القديمة وجذوع النخيل المجوفة.</li>
-    </ul>
-  </div>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
-</section>
-
-<section id="info-palm" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-book-open-reader content-icon"></i>
-    <h2>موسوعة معلومات النخيل</h2>
-  </div>
-  <p>النخلة هي عمود الأمن الغذائي في عُمان ورمز للصمود البيئي. هنا نقدم لكم حقائق علمية وتاريخية.</p>
-  <div class="highlight-box">
-    <strong>حقائق وأرقام:</strong>
-    <ul>
-      <li>تحتضن عُمان أكثر من 8 ملايين نخلة، وتنتج مئات الآلاف من الأطنان سنويًا.</li>
-      <li><strong>الاستدامة البيئية:</strong> تساهم النخلة في مكافحة التصحر، تقليل البصمة الكربونية، وخفض درجات الحرارة.</li>
-      <li><strong>أشهر الأنواع في سمائل:</strong> الفرض (ملك التمور)، الخلاص (المذاق الذهبي)، والمبسلي (المخصص للتصدير والطبخ).</li>
-    </ul>
-  </div>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
-</section>
-
-<section id="store" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-basket-shopping content-icon"></i>
-    <h2>المتجر الريفي</h2>
-  </div>
-  <p>وجهتكم لاقتناء منتجات أصيلة تمزج بين جودة الإنتاج وجمال التغليف العصري.</p>
-  <div class="highlight-box">
-    <ul>
-      <li><strong>ركن التمور:</strong> أجود أنواع الرطب والتمور.</li>
-      <li><strong>ركن السعفيات:</strong> منتجات يدوية بلمسات عصرية.</li>
-    </ul>
-  </div>
-  <button class="btn-action" onclick="openModal('contactModal')">طلب منتجات خاصة</button>
-  <br>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
-</section>
-
-<section id="cafe" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-mug-hot content-icon"></i>
-    <h2>مقهى النخلة</h2>
-  </div>
-  <p>استراحة الزوار للاستمتاع بمذاقات مبتكرة وسط هدوء المزرعة.</p>
-  <div class="highlight-box">
-    <strong>قائمة المقهى:</strong><br>
-    - قهوة نواة التمر.<br>
-    - شاي الكرك بالدبس.<br>
-    - آيس كريم التمر العماني.
-  </div>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
-</section>
-
-<section id="workshops" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-hands-holding-circle content-icon"></i>
-    <h2>أكاديمية السعفيات</h2>
-  </div>
-  <p>نقدم ورش عمل تفاعلية للسياح وطلاب المدارس لتعلم أساسيات سف الخوص.</p>
-  <button class="btn-action" onclick="openModal('contactModal')">حجز ورشة عمل</button>
-  <br>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
-</section>
-
-<section id="digital" class="content">
-  <div class="content-header">
-    <i class="fa-solid fa-laptop-code content-icon"></i>
-    <h2>المنصة الرقمية</h2>
-  </div>
-  <p>بوابة "نخيليات" للعالم، نربط التراث بالتقنية.</p>
-  <div class="highlight-box">
-    <strong>خدمة "طناء النخيل" (E-Tanaa):</strong> 
-    <br>
-    اختر نخلة محددة عبر الموقع، وادفع قيمة "طنائها". نحن نقوم بالرعاية، ونوصل لك محصول الجداد مغلفاً إلى منزلك.
-  </div>
-  <button class="btn-action" onclick="openModal('tanaaModal')">ابدأ رحلة الطناء</button>
-  <br>
-  <a class="btnBack" href="#" onclick="backHome()"><i class="fa-solid fa-arrow-right"></i> العودة</a>
 </section>
 
 <footer>
-  <span class="vision-tag">متوافق مع رؤية عمان 2040</span>
+  <div class="vision-tag">رؤية عمان 2040</div>
   <p>© 2026 نخيليات - ولاية سمائل، قرية سرور</p>
 </footer>
 
 <div id="contactModal" class="modal-overlay">
   <div class="modal-box">
-    <span class="close-modal" onclick="closeModal('contactModal')">&times;</span>
-    <h3><i class="fa-solid fa-envelope-open-text"></i> تواصل معنا</h3>
-    <form onsubmit="event.preventDefault(); alert('شكرًا لتواصلك! سنرد عليك قريبًا.'); closeModal('contactModal');">
-      <div class="form-group">
-        <label>الاسم الكريم</label>
-        <input type="text" placeholder="الاسم" required>
-      </div>
-      <div class="form-group">
-        <label>رقم الهاتف</label>
-        <input type="tel" placeholder="9xxxxxxx" required>
-      </div>
-      <div class="form-group">
-        <label>رسالتك</label>
-        <textarea rows="4" placeholder="استفسار، حجز، أو اقتراح..."></textarea>
-      </div>
-      <button type="submit" class="btn-submit">إرسال</button>
-    </form>
-  </div>
-</div>
-
-<div id="tanaaModal" class="modal-overlay">
-  <div class="modal-box">
-    <span class="close-modal" onclick="closeModal('tanaaModal')">&times;</span>
-    <h3><i class="fa-solid fa-tree"></i> حجز طناء النخيل</h3>
-    <p style="text-align:center; color:#666; margin-bottom:15px; font-size:0.9rem;">
-      سجل اهتمامك وسنتواصل معك لعرض النخيل المتاحة للموسم الحالي.
-    </p>
-    <form onsubmit="event.preventDefault(); alert('تم تسجيل طلبك! سيتصل بك فريق نخيليات لتحديد النخلة.'); closeModal('tanaaModal');">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <h3>تواصل معنا</h3>
+    <form onsubmit="event.preventDefault(); alert('شكراً لرسالتك!'); closeModal();">
       <div class="form-group">
         <label>الاسم</label>
         <input type="text" required>
       </div>
       <div class="form-group">
-        <label>نوع النخلة المفضل</label>
-        <select>
-          <option>خلاص</option>
-          <option>فرض</option>
-          <option>خنيزي</option>
-          <option>مبسلي</option>
-          <option>لا يهم (أي نوع)</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>رقم الهاتف للتواصل</label>
+        <label>رقم التواصل</label>
         <input type="tel" required>
       </div>
-      <button type="submit" class="btn-submit" style="background:var(--accent-color);">تأكيد الحجز المبدئي</button>
+      <div class="form-group">
+        <label>الموضوع</label>
+        <textarea rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">إرسال الطلب</button>
     </form>
   </div>
 </div>
 
 <script>
-  // 1. دالة للتحكم في العرض فقط (بدون تسجيل في التاريخ)
-  function renderView(viewId) {
-    const homeGrid = document.getElementById('home-grid');
-    const heroBlock = document.getElementById('hero-block');
-    const contentSections = document.querySelectorAll('.content');
-
-    // إذا كان المطلوب هو الرئيسية
-    if (viewId === 'home' || viewId === '' || !viewId) {
-      contentSections.forEach(s => s.style.display = 'none');
-      homeGrid.style.display = 'grid';
-      heroBlock.style.display = 'block';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      // إذا كان المطلوب قسم فرعي
-      const section = document.getElementById(viewId);
-      if (section) {
-        homeGrid.style.display = 'none';
-        heroBlock.style.display = 'none';
-        contentSections.forEach(s => s.style.display = 'none');
-        section.style.display = 'block';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }
+  function openModal() {
+    document.getElementById('contactModal').style.display = 'flex';
   }
-
-  // 2. دالة الانتقال التي تستدعيها الأزرار (تسجل في التاريخ)
-  function showSection(id) {
-    // إضافة الحالة لتاريخ المتصفح
-    history.pushState({ section: id }, "", "#" + id);
-    renderView(id);
+  function closeModal() {
+    document.getElementById('contactModal').style.display = 'none';
   }
-
-  // 3. دالة العودة للرئيسية (تسجل في التاريخ)
-  function backHome() {
-    // إزالة الهاش من الرابط والعودة للرئيسية
-    history.pushState({ section: 'home' }, "", window.location.pathname);
-    renderView('home');
-  }
-
-  // 4. الاستماع لزر العودة في المتصفح (The Magic Part)
-  window.addEventListener('popstate', function(event) {
-    // التحقق من الحالة المحفوظة أو الهاش الموجود في الرابط
-    const sectionId = location.hash.replace('#', '') || 'home';
-    renderView(sectionId);
-  });
-
-  // 5. عند تحميل الصفحة لأول مرة (لفتح رابط مباشر لقسم معين)
-  window.addEventListener('DOMContentLoaded', () => {
-    const initialSection = location.hash.replace('#', '') || 'home';
-    renderView(initialSection);
-  });
-
-  // --- دوال النوافذ المنبثقة (Modals) ---
-  function openModal(modalId) {
-    document.getElementById(modalId).style.display = 'flex';
-  }
-
-  function closeModal(modalId) {
-    document.getElementById(modalId).style.display = 'none';
-  }
-
   window.onclick = function(event) {
-    if (event.target.classList.contains('modal-overlay')) {
-      event.target.style.display = "none";
+    if (event.target.className === 'modal-overlay') {
+      closeModal();
     }
   }
 </script>
 
 </body>
 </html>
-
