@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>المتحف الحي - نخيليات</title>
-    <link rel="stylesheet" href="style.css"> <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>المتحف الحي | نخيليات</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <div class="logo">
-    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; color: var(--primary-main);">
-        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <path d="M45 55 L55 55 L58 95 L42 95 Z" fill="#8B4513"/>
-            <path d="M55 55 Q65 65 60 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
-            <path d="M45 55 Q35 65 40 75" stroke="#c68e17" stroke-width="6" stroke-linecap="round" fill="none"/>
-            <path d="M50 55 L50 10" stroke="#2e5d38" stroke-width="3" stroke-linecap="round"/>
-            <path d="M50 55 Q70 40 85 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M50 55 Q30 40 15 45" stroke="#2e5d38" stroke-width="3" stroke-linecap="round" fill="none"/>
-        </svg>
-        <span style="margin-right:8px; font-weight:900;">نخيليات</span>
+    <a href="index.html">
+      <img src="logo.png" alt="نخيليات" style="height: 60px; vertical-align: middle;">
     </a>
   </div>
-  <a href="index.html#contact" class="btn-contact">تواصل معنا</a>
+  <a href="index.html" class="btn-contact" style="background: var(--text-medium);">الرئيسية</a>
 </nav>
 
-<main class="content" style="display:block; margin-top: 50px;">
+<main class="content" style="display: block;">
   <div class="content-header">
     <i class="fa-solid fa-map-location-dot content-icon"></i>
-    <h2>المتحف الحي المفتوح</h2>
+    <h2>المتحف الحي: رحلة في قلب الواحة</h2>
+    <p>انطلق في جولة تفاعلية تجمع بين الطبيعة الساحرة والتراث العماني الأصيل في بساتين قرية سرور.</p>
   </div>
-  <p>تجربة غامرة وسط الطبيعة لاستنشاق عبق الماضي في قرية سرور.</p>
-  <div class="highlight-box">
-    <strong>التجربة تشمل:</strong>
-    <ul>
-      <li>مسارات مشي تعليمية بين أصناف النخيل العمانية.</li>
-      <li>مشاهدة حية لعمليات التنبيت، التبسيل، والجداد.</li>
-      <li>التعرف على هندسة الأفلاج القديمة.</li>
+
+  <div style="margin-top: 30px;">
+    <h3><i class="fa-solid fa-route"></i> محطات الجولة الميدانية</h3>
+    <div class="workshop-list">
+      
+      <div class="workshop-item">
+        <div class="workshop-time"><i class="fa-solid fa-water fa-2x"></i></div>
+        <div class="workshop-details">
+          <h4>نظام الأفلاج التقليدي</h4>
+          <p>تعرف على هندسة الري العمانية القديمة وشاهد جريان الفلج وتوزيع المياه بين المزارع بنظام "الأثر".</p>
+        </div>
+      </div>
+
+      <div class="workshop-item">
+        <div class="workshop-time"><i class="fa-solid fa-person-hiking fa-2x"></i></div>
+        <div class="workshop-details">
+          <h4>دروب النخيل</h4>
+          <p>تجول بين مختلف أصناف النخيل واستمع لشرح مرشدينا حول دورة حياة النخلة من الفسيلة إلى الحصاد.</p>
+        </div>
+      </div>
+
+      <div class="workshop-item">
+        <div class="workshop-time"><i class="fa-solid fa-wheat-awn fa-2x"></i></div>
+        <div class="workshop-details">
+          <h4>تجربة الحصاد (موسمية)</h4>
+          <p>شارك المزارعين في عمليات "التحدير" أو "الجداد" واستمتع بتذوق الرطب الطازج مباشرة من النخلة.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+  <div class="highlight-box" style="margin-top: 40px; border-right-color: #2e5d38;">
+    <h3><i class="fa-solid fa-circle-info"></i> معلومات هامة للزوار</h3>
+    <ul style="margin-right: 20px; line-height: 2;">
+      <li><b>مدة الجولة:</b> تتراوح بين 45 إلى 60 دقيقة.</li>
+      <li><b>التجهيزات:</b> نوصي بارتداء أحذية مريحة للمشي وقبعة شمسية.</li>
+      <li><b>اللغات:</b> تتوفر الجولة باللغتين العربية والإنجليزية.</li>
+      <li><b>المجموعات:</b> نوفر جولات خاصة للمدارس والمجموعات السياحية الكبيرة.</li>
     </ul>
   </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <p><b>هل أنت مستعد لتعيش التجربة؟</b></p>
+    <button class="btn-submit" style="width: auto; padding: 15px 40px;" onclick="location.href='digital.html'">احجز جولتك الآن</button>
+  </div>
+
   <a class="btnBack" href="index.html"><i class="fa-solid fa-arrow-right"></i> العودة للرئيسية</a>
 </main>
 
 <footer>
-  <p>© 2026 نخيليات - قرية سرور</p>
+  <p>© 2026 نخيليات - استمتع بالطبيعة في ولاية سمائل</p>
 </footer>
 
 </body>
